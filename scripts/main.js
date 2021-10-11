@@ -56,11 +56,11 @@ function reqListener(jsonData, timeframe){
       break;
       case 'Weekly': 
       hours[i].textContent = jsonData[i].timeframes.weekly.current + 'hrs';
-      lastHours[i].textContent = 'Last Week - ' +  jsonData[i].timeframes.daily.previous + 'hrs';
+      lastHours[i].textContent = 'Last Week - ' +  jsonData[i].timeframes.weekly.previous + 'hrs';
       break;
       case 'Monthly': 
       hours[i].textContent = jsonData[i].timeframes.monthly.current + 'hrs';
-      lastHours[i].textContent = 'Last Month - ' + jsonData[i].timeframes.daily.previous + 'hrs';
+      lastHours[i].textContent = 'Last Month - ' + jsonData[i].timeframes.monthly.previous + 'hrs';
       break;
     }
     
